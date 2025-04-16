@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import logo from "../assets/img.jpg";
 import { FaHome, FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const navigate=useNavigate();
   const toggleMenu = () => setIsOpen(!isOpen);
-
+  const handlelogin=()=>{
+    navigate("/login")
+  }
   return (
     <div className="w-full bg-black">
       <div className="max-w-7xl mx-auto p-2 flex items-center justify-between h-16">
@@ -25,7 +28,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="hidden md:block">
-          <button className="bg-green-200 px-4 py-2 rounded hover:bg-yellow-300 transition-all duration-300">
+          <button className="bg-green-200 px-4 py-2 rounded hover:bg-yellow-300 transition-all duration-300"  onClick={handlelogin}>
             Login
           </button>
         </div>
@@ -43,7 +46,7 @@ const Navbar = () => {
           <div className="hover:text-yellow-300 hover:underline cursor-pointer">Power Backup</div>
           <div className="hover:text-yellow-300 hover:underline cursor-pointer">Help & Support</div>
           <div className="hover:text-yellow-300 hover:underline cursor-pointer">More</div>
-          <button className="w-full bg-green-200 text-black px-4 py-2 rounded hover:bg-yellow-300 transition-all duration-300">
+          <button className="w-full bg-green-200 text-black px-4 py-2 rounded hover:bg-yellow-300 transition-all duration-300" onClick={handlelogin}>
             Login
           </button>
         </div>

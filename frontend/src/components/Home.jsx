@@ -10,6 +10,7 @@ const Home = () => {
         <Navbar />
         <Carosel />
         <Comp1 />
+
         <Footer />
       </div>
     </div>
