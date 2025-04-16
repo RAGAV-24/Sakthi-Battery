@@ -10,6 +10,9 @@ const Navbar = () => {
   const handlelogin=()=>{
     navigate("/login")
   }
+  const han=()=>{
+    navigate("/");
+  }
   return (
     <div className="w-full bg-black">
       <div className="max-w-7xl mx-auto p-2 flex items-center justify-between h-16">
@@ -17,7 +20,7 @@ const Navbar = () => {
         <div className="flex items-center space-x-6">
           <img src={logo} className="rounded-2xl w-30 h-14 p-1" alt="logo" />
           <div className="hidden md:flex items-center space-x-4 text-white">
-            <div className="flex items-center mb-3 hover:text-yellow-300 hover:underline cursor-pointer">
+            <div className="flex items-center mb-3 hover:text-yellow-300 hover:underline cursor-pointer" onClick={han}>
               <FaHome className="mr-1" /> Home
             </div>
             <p className="hover:text-yellow-300 hover:underline cursor-pointer">Automotive Batteries</p>

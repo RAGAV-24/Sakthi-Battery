@@ -1,10 +1,13 @@
 import React, { useState } from "react";
-
+import Navbar from "../components/Navbar";
 export default function Login() {
   const [isLogin, setIsLogin] = useState(true);
 
   return (
+    <div>
+      <Navbar />
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-400 via-blue-300 to-yellow-500">
+
       <div className="w-full max-w-md bg-gray-900 text-white p-8 rounded-2xl shadow-2xl relative">
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-300 text-black rounded-full p-2 px-6 font-bold shadow-md">
           ⚡ Sakthi Battery Shop
@@ -62,6 +65,7 @@ export default function Login() {
           </button>
         </div>
       </div>
+    </div>
     </div>
   );
 }
