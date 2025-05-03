@@ -6,7 +6,7 @@ import Login from "./Pages/Login";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import About from "./Pages/About"
 import 'leaflet/dist/leaflet.css';
-
+import Support from "./Pages/Support"
 
 const App = () => {
   return (
@@ -16,6 +16,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />}/>
            <Route path="/about" element={<About />} />
+           <Route path="/support" element={<Support />} />
           </Routes>
           </Router>
     </div>

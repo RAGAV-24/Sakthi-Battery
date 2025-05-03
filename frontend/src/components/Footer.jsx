@@ -45,7 +45,7 @@ const Footer = () => {
             <li className="hover:text-yellow-200">Warranty Registration</li>
             <li className="hover:text-yellow-200">Privacy Policy</li>
             <li className="hover:text-yellow-200">Shipping & Returns Policy</li>
-            <li vclassName="hover:text-yellow-200">CSR Policy</li>
+            <li className="hover:text-yellow-200">CSR Policy</li>
             <li className="hover:text-yellow-200">Whistleblower Policy</li>
           </ul>
         </div>
