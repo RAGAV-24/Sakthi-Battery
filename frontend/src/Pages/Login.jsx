@@ -9,7 +9,6 @@ export default function Login() {
       const result = await signInWithGoogle();
       const user = result.user;
       console.log("User signed in:", user);
-      // Redirect or update state here
     } catch (error) {
       console.error("Google Sign-In error", error);
     }
