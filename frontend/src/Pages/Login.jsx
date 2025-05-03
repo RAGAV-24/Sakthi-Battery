@@ -1,8 +1,19 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
+import { FcGoogle } from "react-icons/fc";
+import { signInWithGoogle } from "../Firebase";
 export default function Login() {
   const [isLogin, setIsLogin] = useState(true);
-
+  const handleGoogleSignIn = async () => {
+    try {
+      const result = await signInWithGoogle();
+      const user = result.user;
+      console.log("User signed in:", user);
+      // Redirect or update state here
+    } catch (error) {
+      console.error("Google Sign-In error", error);
+    }
+  };
   return (
     <div>
       <Navbar />
@@ -64,6 +75,7 @@ export default function Login() {
             {isLogin ? "Create Account" : "Login"}
           </button>
         </div>
+        <div className="flex flex-row pl-25"   onClick={handleGoogleSignIn}><FcGoogle size={25}> </FcGoogle> <p className="text-red">Continue with google</p> </div>
       </div>
     </div>
     </div>
