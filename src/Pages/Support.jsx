@@ -9,7 +9,8 @@ const Support = () => {
       <Navbar />
     <div className="min-h-screen bg-gray-100 ">
 
-      <div className="relative min-h-screen rounded-2xl overflow-hidden">       <div
+      <div className="relative min-h-screen rounded-2xl overflow-hidden">
+         <div
               className="absolute inset-0 bg-cover bg-center z-0"
               style={{
                 backgroundImage: `url(${bg})`,
